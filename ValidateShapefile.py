@@ -29,7 +29,7 @@ class CheckSHP:
             # create a loop by files
             for file in files:
                 # for the files that endswith .shp, join the root and file
-                if file.endswith(".shp"):
+                if file.endswith(".shp") or file.endswith(".SHP"):
                     # create a local variable that we can assign the root and file path then loop it
                     path = os.path.join(root, file)
                     # append the path in our file_loc list
